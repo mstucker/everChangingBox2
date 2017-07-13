@@ -1,0 +1,69 @@
+body {
+	background-color: lightblue;
+	animation: bodychanging 5s;
+	animation-iteration-count: infinite;
+}
+#box{
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	
+	animation: magic 3s alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes magic {
+	0% {background-color: darkgreen;
+		border: 5px solid black;
+		color: white;
+		}
+	50% {
+		background-color: tomato;
+		transform: translate(10px, 500px) rotate3d(5,0,3,645deg) scale(2, 2.5);
+	}	
+	
+	100% {background-color: blue;
+		border: 5px solid white;
+		color: black;
+		transform: translate(250px, 100px) rotate3d(2, 7, 0, 270deg)
+		scale(.25, .5);
+		border-radius: 50%;
+		}
+}
+
+@keyframes bodychanging{
+	0% {background-color: lightblue;}
+	10% {background-color: chartreuse;}
+	20% {background-color: crimson;}
+	30% {background-color: darkmagenta;}
+	40% {background-color: goldenrod;}
+	50% {background-color: deepskyblue;}
+	60% {background-color: green;}
+	70% {background-color: indigo;}
+	80% {background-color: mediumseagreen;}
+	90% {background-color: peru;}
+	100% {background-color: turquoise;}
+	
+}
+
+
+p{
+	
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	text-align: center;
+	margin: auto;
+}
+
+/*   Save this file on desktop as box.css */
+
+ /* #box2{
+	position: relative;
+	left: 100px;
+	bottom: 100px;
+	
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	
+} */
